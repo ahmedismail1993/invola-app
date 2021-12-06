@@ -1,0 +1,16 @@
+.apps {
+    margin-top: 100px;
+    min-height: 50vh;
+    &__title {
+        text-align: center;
+    }
+    &__wrapper {
+        margin-top: 100px;
+        display: flex;
+        align-items: center;
+        @include mobileViewAndDown {
+            flex-wrap: wrap;
+        }
+        gap: 20px;
+    }
+}

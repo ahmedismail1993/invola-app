@@ -1,0 +1,30 @@
+.header {
+    &__navbar {
+        display: flex;
+        align-items: center;
+        &__logo {
+            width: 110px;
+            height: 50px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &__list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1 1;
+            &--item {
+                margin-inline: 0 80px;
+            }
+        }
+        @include mobileViewAndDown {
+            display: none;
+        }
+    }
+    &__burger-menu {
+        margin-top: 20px;
+        cursor: pointer;
+    }
+}

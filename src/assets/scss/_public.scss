@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif !important;
+}
+body {
+    direction: rtl;
+}
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+footer {
+    min-height: 50vh;
+    background: url("../images/footer.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}

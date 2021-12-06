@@ -1,0 +1,39 @@
+.btn {
+    &--primary {
+        width: 295px;
+        height: 60px;
+        background: $primary;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 0;
+        cursor: pointer;
+        margin-top: 50px;
+        @include mobileViewAndDown {
+            margin: auto;
+        }
+        img {
+            margin-inline: 10px;
+        }
+        span {
+            color: $secondary;
+            font-weight: bold;
+        }
+    }
+    &__arrow {
+        animation: move 1s infinite linear;
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
